@@ -19,21 +19,21 @@ Add-Type -Path ".\WebDriver.dll"
 
 #Part 2 - Taking in User Parameters
 #Here we'll be asking the user both "What do you want to scrape?" as well as "Where do you want to put this?"
-Write-Host "Please paste the NHK World Video On Demand Program URL you'd like to scrape"
-Write-Host "These URL's typically look like: https://www3.nhk.or.jp/nhkworld/en/ondemand/program/video/drainspotters/?type=tvEpisode& "
-$YourURL = Read-Host "URL"
+#Write-Host "Please paste the NHK World Video On Demand Program URL you'd like to scrape"
+#Write-Host "These URL's typically look like: https://www3.nhk.or.jp/nhkworld/en/ondemand/program/video/drainspotters/?type=tvEpisode& "
+#$YourURL = Read-Host "URL"
 
 #If you're comfortable with modifying the code, you can comment out the user prompt and just paste the link in the line below
-#$YourURL = "https://www3.nhk.or.jp/nhkworld/en/ondemand/program/video/drainspotters/?type=tvEpisode&"
+$YourURL = "https://www3.nhk.or.jp/nhkworld/en/ondemand/program/video/dwc/?type=tvEpisode&"
 
 #Ask the user where the files will be saved too. This lets users save out to a separate directory/storage location that is separate from the working directory. Very helpful if you're saving to a NAS or external drive
-Write-Host "Where would you like to save the files?"
-Write-Host "Files saved will be placed in a series directory at the location provided"
-$SavePath = Read-Host "Save Directory"
+#Write-Host "Where would you like to save the files?"
+#Write-Host "Files saved will be placed in a series directory at the location provided"
+#$SavePath = Read-Host "Save Directory"
 
 #If you're comfortabel with hard coding your save directory, you can comment out the lines above and hard coding your save path here
 #$SavePath = [Environment]::CurrentDirectory
-
+$SavePath = "Y:\Completed"
 
 #Part 3 - Opening the NHK Website in Chrome using Selenium's driver
 #In order to get the source code for the page we're trying to scrape, we need to have selenium/chrome render the page in its entirety
@@ -168,7 +168,7 @@ $FileStream.Close()
 # -c is to continue downloads in case you need to retry saving the file after an unexpected interruption from a previous pass
 # --batch-file reads in the temp.txt to find the links we've extracted
 # max and min sleep intervals are countermeasures against anti-spam protection on the web server side. These two values can be adjusted higher to try and prevent the web server from rejecting your requests
-& youtube-dl.exe -o "$SavePath/%(series)s/%(title)s.%(ext)s" --no-overwrites -c --batch-file ".\temp.txt" --max-sleep-interval 30 --min-sleep-interval 5
+& .\youtube-dl.exe -o "$SavePath/%(series)s/%(title)s.%(ext)s" --no-overwrites -c --batch-file ".\temp.txt" --max-sleep-interval 30 --min-sleep-interval 5
 
 #I put the pause at the end so you can see if there are any errors output from youtube-dl.exe
 Pause
