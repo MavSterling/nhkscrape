@@ -9,5 +9,6 @@ Pre-Requisite Scripts/Packages
 4. Selenium WebDriver Support - https://www.nuget.org/packages/Selenium.Support
 5. ChromeDriver (Pay attention to the version number)- https://sites.google.com/a/chromium.org/chromedriver/
 6. Chrome - Update your chrome client to the same version listed on the chromedriver website
+7. Powershell Execution Policy must be set to either RemoteSigned or Unrestricted
 
 Using the script:
