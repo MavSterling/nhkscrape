@@ -1,8 +1,8 @@
 # nhkscrape V1.0
 ### By Holynub/MavSterling 6/10/2019
-###NHK Scraping tool for NHK World's On Demand Programs
+### NHK Scraping tool for NHK World's On Demand Programs
 
-##Pre-Requisite Scripts/Packages
+## Pre-Requisite Scripts/Packages
 1. Youtube-DL - https://ytdl-org.github.io/youtube-dl/download.html 
 2. FFMPEG - https://ffmpeg.zeranoe.com/builds/
 3. Selenium WebDriver - https://www.nuget.org/packages/Selenium.WebDriver
@@ -12,34 +12,35 @@
 7. Powershell Execution Policy must be set to either RemoteSigned or Unrestricted
 9. Windows 10 running at least the .NET 4.5 Framework - This project was built using Powershell on my gaming workstation. However, you could take this workflow and modify it for BASH or MacOS it is definitely possible.
 
-##Pre-Requisite Downloading/extracting
+## Pre-Requisite Downloading/extracting
 
-###Youtube-dl 
+### Youtube-dl 
 
 1. Download the windows exe link listed at the top of the website
 
-###FFMPEG 
+### FFMPEG 
 
 1. Download the most recent version for the windows 64-bit architecture
 2. Unzip the file
 3. Rename the unziped directory/folder to FFMPEG (Make sure this renamed folder contains the Bin, DOC, and presets directories)
 	a) The folder structure should look like the following:
+		```
 		FFMPEG\
 			BIN\
 			DOC\
 			Presets\
 			License.txt
 			Readme.txt
-
-###Selenium Packages - Instructions apply to both the Selenium WebDriver and the Support
+		```
+### Selenium Packages - Instructions apply to both the Selenium WebDriver and the Support
 
 1. On the download page, use the "Download package" link on the right side of the page under "Info"
 2. This should download a selenium.webdriver.version.nupkg
 3. If you use 7-Zip you can right click the file and unzip it
 3b. Alternatively, you can rename the file extension to .ZIP and it will unzip like any other zip container
-4. The DLL's and XML's required are located in the Selenium.WebDriver.Version\lib\net45\ folder
+4. The DLL's and XML's required are located in the `Selenium.WebDriver.Version\lib\net45\` folder
 
-###ChromeDriver
+### ChromeDriver
 
 1. Go to your "About Google Chrome" page under Chrome settings
 2. Take note of the version listed there
@@ -47,13 +48,13 @@
 4. Download the chromedriver_win32.zip on the directory page
 5. Unzip the file to access the chromedriver.exe
 
-###Powershell's Execution Policy
+### Powershell's Execution Policy
 
 1. Run a Powershell window as Administrator
-2. run the following command: Set-ExecutionPolicy RemoteSigned
-3. To confirm your ExecutionPolicy is correct you can check it by running: Get-ExecutionPolicy
+2. run the following command: `Set-ExecutionPolicy RemoteSigned`
+3. To confirm your ExecutionPolicy is correct you can check it by running: `Get-ExecutionPolicy`
 
-##Script Setup
+## Script Setup
 
 1. Create a new Directory to store all of the pre-requisite files/scripts.
 2. Place the following executibles in the directory:
@@ -66,7 +67,7 @@
 	g) NHKScrape.ps1
 	h) The extracted ffmpeg folder.
 
-##About
+## About
 
 This project was started because of the inability to find older NHK World videos and documentaries. Most programs shown on NHK World are taken down after about a year from the original airing date. NHK does not provide any alternative locations to view/purchase these videos and many become lost media. There is a small group of archivists that are trying to preserve these videos, however I felt there was a need to more easily archive the video programming listed on the NHK World website. And so, this script was created.
 
