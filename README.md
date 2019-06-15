@@ -24,14 +24,14 @@
 2. Unzip the file
 3. Rename the unziped directory/folder to FFMPEG (Make sure this renamed folder contains the Bin, DOC, and presets directories)
 	a) The folder structure should look like the following:
-		```
+		
 		FFMPEG\
 			BIN\
 			DOC\
 			Presets\
 			License.txt
 			Readme.txt
-		```
+		
 ### Selenium Packages - Instructions apply to both the Selenium WebDriver and the Support
 
 1. On the download page, use the "Download package" link on the right side of the page under "Info"
