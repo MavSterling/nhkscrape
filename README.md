@@ -2,6 +2,9 @@
 # By Holynub/MavSterling 6/10/2019
 NHK Scraping tool for NHK World's On Demand Programs
 
+About
+This project was started because of the inability to find older NHK World videos and documentaries. Most programs shown on NHK World are taken down after about a year from the original airing date.
+
 Pre-Requisite Scripts/Packages
 1. Youtube-DL - https://ytdl-org.github.io/youtube-dl/download.html 
 2. FFMPEG - https://ffmpeg.zeranoe.com/builds/
@@ -11,4 +14,7 @@ Pre-Requisite Scripts/Packages
 6. Chrome - Update your chrome client to the same version listed on the chromedriver website
 7. Powershell Execution Policy must be set to either RemoteSigned or Unrestricted
 
-Using the script:
+
+Script "Installation"
+
+
