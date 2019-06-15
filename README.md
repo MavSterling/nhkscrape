@@ -11,6 +11,7 @@
 6. Chrome - Update your chrome client to the same version listed on the chromedriver website
 7. Powershell Execution Policy must be set to either RemoteSigned or Unrestricted
 9. Windows 10 running at least the .NET 4.5 Framework - This project was built using Powershell on my gaming workstation. However, you could take this workflow and modify it for BASH or MacOS it is definitely possible.
+10. nhkscrape.ps1 script - Download it from this repository! (Or copy and paste into a new script file)
 
 ## Pre-Requisite Downloading/extracting
 
@@ -66,6 +67,21 @@
 	f) WebDriver.Support.xml (Agauin, not really sure if its NEEDED, but meh.)
 	g) NHKScrape.ps1
 	h) The extracted ffmpeg folder.
+## Running the Script
+
+1. Open your script directory in a file explorer
+2. Your prompt should be in the directory with the NHKScrape.ps1 script
+3. Type in :`.\NHKScrape.PS1`
+4. Enter the URL of the NHK Program you're looking to download
+5. Enter the path you're looking to save your files
+6. The script should run and you can either watch the script or let it run while you do something else
+
+## Known Bugs/Issues
+
+1. Sometimes the NHK World program page will load with 0 hits
+	- This sometimes happens at random. I haven't figured out a good way to get past it. But if you run the script a 2nd time, it usually fixes itself.
+2. Youtube-dl error gives a bad gateway
+	- I don't know for certain, but I think this error could be an anti-spam measure by the NHK World Webserver. So it denies the connection. I put in a delay inbetween video files, but you may want to edit the script and try increasing the values. Alternatively, you could add a proxy list to your youtube-dl parameters. I haven't used a proxy list before, but it should work? Maybe?
 
 ## About
 

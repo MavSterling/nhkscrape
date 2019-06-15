@@ -27,7 +27,7 @@ $YourURL = Read-Host "URL"
 #$YourURL = "https://www3.nhk.or.jp/nhkworld/en/ondemand/program/video/drainspotters/?type=tvEpisode&"
 
 #Ask the user where the files will be saved too. This lets users save out to a separate directory/storage location that is separate from the working directory. Very helpful if you're saving to a NAS or external drive
-Write-Host "Where would you like to save the files?"
+Write-Host "Where would you like to save the files? Ex: C:\downloads"
 Write-Host "Files saved will be placed in a series directory at the location provided"
 $SavePath = Read-Host "Save Directory"
 
@@ -143,7 +143,8 @@ Stop-ChromeDriver
 #We are utilizing a parameter of youtube-dl.exe that takes in a file and reads in line-delimited URL's
 
 #We will be using the .NET Streamwriter to create/overwrite the temp.txt file that is located in the current working directory
-$FileStream = [System.IO.StreamWriter] "temp.txt"
+$tempFile = Join-Path (Get-Location).Path "temp.txt"
+$FileStream = [System.IO.StreamWriter] $tempFile
 
 #We then write the URL's one element at a time to the temp.txt using StreamWriter
 $ExtractedLinks | % {
