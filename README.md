@@ -71,11 +71,13 @@
 ## Running the Script
 
 1. Open your script directory in a file explorer
-2. Your prompt should be in the directory with the NHKScrape.ps1 script
-3. Type in :`.\NHKScrape.PS1`
-4. Enter the URL of the NHK Program you're looking to download
-5. Enter the path you're looking to save your files
-6. The script should run and you can either watch the script or let it run while you do something else
+2. Press Shift and Right click in the folder window.
+3. Click "Open Powershell window here"
+4. Your prompt should be in the directory with the NHKScrape.ps1 script
+5. Type in :`.\NHKScrape.PS1`
+6. Enter the URL of the NHK Program you're looking to download
+7. Enter the path you're looking to save your files
+8. The script should run and you can either watch the script or let it run while you do something else
 
 ## Known Bugs/Issues
 
