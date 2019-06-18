@@ -97,3 +97,9 @@ The biggest challenge was being able to pull the URL's from the NHK Video Progra
 Eventually, I was able to launch a chrome browser via the command line and have it scroll through the website, to which I then was able to scrape the links off the pages. From there, I utilized the youtube-dl utility to actually download the videos off their respective URL's. And the end result is the script you have here.
 
 For all of my fellow archivists, please feel free to take this script and make modifications for use in any of your use cases. I started this project because I felt that these great shows/documentaries were going to become lost media. There might be another website out there that you feel the same. And hopefully this script can give you some ideas as to how you can preserve the content before its lost.
+
+## Credits
+
+Major shout out to: Mavericksevermont and their article on using powershell and Selenium. Without it, I would still be here banging my head against my keyboard trying to figure out how to get it to work. https://tech.mavericksevmont.com/blog/powershell-selenium-automate-web-browser-interactions-part-i/
+
+All of the billiion Stack Overflow articles on random stupid problems I had.
