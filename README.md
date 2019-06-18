@@ -59,14 +59,15 @@
 
 1. Create a new Directory to store all of the pre-requisite files/scripts.
 2. Place the following executibles in the directory:
-	a) youtube-dl.exe
-	b) chromedriver.exe
-	c) WebDriver.dll
-	d) WebDriver.Support.Dll
-	e) Webdriver.xml (Not really sure if this is really needed, but its in the same folder)
-	f) WebDriver.Support.xml (Agauin, not really sure if its NEEDED, but meh.)
-	g) NHKScrape.ps1
-	h) The extracted ffmpeg folder.
+	1. youtube-dl.exe
+	2. chromedriver.exe
+	3. WebDriver.dll
+	4. WebDriver.Support.Dll
+	5. Webdriver.xml (Not really sure if this is really needed, but its in the same folder)
+	6. WebDriver.Support.xml (Agauin, not really sure if its NEEDED, but meh.)
+	7. NHKScrape.ps1
+	8. The extracted ffmpeg folder.
+
 ## Running the Script
 
 1. Open your script directory in a file explorer
